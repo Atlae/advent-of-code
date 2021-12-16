@@ -41,7 +41,7 @@ def part1() -> int:
                 y += (int) (line[1])
             else:
                 x += (int) (line[1])
-    print(x * y)
+    return(x * y)
 
 """
 --- Part Two ---
@@ -82,9 +82,8 @@ def part2() -> int:
             else:
                 x += (int) (line[1])
                 y += aim * (int) (line[1])
-    print(x * y)
+    return(x * y)
 
 
 if __name__ == '__main__':
-    part1() 
-    part2()
+    print(part1(), part2())

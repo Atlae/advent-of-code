@@ -49,7 +49,7 @@ def part1() -> int:
         while len(lines) > 1:
             if lines.pop(0) < lines[0]:
                 count += 1
-    print(count)
+    return(count)
 
 """
 --- Part Two ---
@@ -95,8 +95,7 @@ def part2() -> int:
             popped = list_of_sums.pop(0)
             if popped < list_of_sums[0]:
                 count += 1
-        print(count)
+        return(count)
 
 if __name__ == "__main__":
-    part1()
-    part2()
+    print(part1(), part2())
